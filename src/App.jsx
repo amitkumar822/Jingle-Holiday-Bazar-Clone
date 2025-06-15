@@ -7,6 +7,8 @@ import Services from './components/Services'
 import PopularDestinationsIndia from './page/home/PopularDestinationsIndia';
 import PopularDestinationsInternational from './page/home/PopularDestinationsInternational';
 import Gallery from './page/home/Gallery';
+import FeaturedTours from './components/FeaturedTours';
+import Footer from './page/home/Footer';
 
 function App() {
   useEffect(() => {
@@ -22,6 +24,8 @@ function App() {
       <PopularDestinationsIndia />
       <PopularDestinationsInternational />
       <Gallery />
+      <FeaturedTours />
+      <Footer />
     </div>
   )
 }
