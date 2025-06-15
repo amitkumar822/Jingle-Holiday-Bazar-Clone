@@ -1,0 +1,29 @@
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Navbar from './page/home/Navbar'
+import HeroSection from './components/HeroSection'
+import Services from './components/Services'
+import PopularDestinationsIndia from './page/home/PopularDestinationsIndia';
+import PopularDestinationsInternational from './page/home/PopularDestinationsInternational';
+import Gallery from './page/home/Gallery';
+
+function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+  return (
+    <div>
+      <Navbar />
+      <HeroSection />
+      <Services />
+      <PopularDestinationsIndia />
+      <PopularDestinationsInternational />
+      <Gallery />
+    </div>
+  )
+}
+
+export default App
