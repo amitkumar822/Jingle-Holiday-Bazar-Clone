@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-const Contact = () => {
+const ContactUs = () => {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
@@ -35,4 +35,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;

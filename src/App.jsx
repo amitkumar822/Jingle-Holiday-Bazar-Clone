@@ -9,9 +9,9 @@ import PopularDestinationsInternational from './page/home/PopularDestinationsInt
 import Gallery from './page/home/Gallery';
 import FeaturedTours from './components/FeaturedTours';
 import Footer from './page/home/Footer';
-import Contact from './page/Contact';
+import Contact from './page/ContactUs';
 import CurosrPointer from './utils/CurosrPointer';
-import AboutUs from './page/AboutUs';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -22,15 +22,9 @@ function App() {
   return (
     <div className='w-full overflow-hidden'>
       <Navbar />
-      {/* <HeroSection />
-      <Services />
-      <PopularDestinationsIndia />
-      <PopularDestinationsInternational />
-      <Gallery />
-      <FeaturedTours /> */}
-
-      {/* <Contact /> */}
-      <AboutUs />
+      <main>
+        <Outlet />
+      </main>
       <CurosrPointer />
       <Footer />
     </div>

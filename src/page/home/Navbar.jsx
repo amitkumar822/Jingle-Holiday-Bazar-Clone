@@ -2,14 +2,15 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about-us" },
     { name: "Domestic", href: "#domestic" },
     { name: "International", href: "#international" },
     { name: "Place Packages", href: "#packages" },
@@ -34,13 +35,13 @@ const Navbar = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-4">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="text-gray-100 font-extrabold hover:text-blue-600 px-3 py-2 rounded-md"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <Button className="ml-4 bg-blue-600 hover:bg-blue-700">
                 PAY NOW
