@@ -9,6 +9,9 @@ import PopularDestinationsInternational from './page/home/PopularDestinationsInt
 import Gallery from './page/home/Gallery';
 import FeaturedTours from './components/FeaturedTours';
 import Footer from './page/home/Footer';
+import Contact from './page/Contact';
+import CurosrPointer from './utils/CurosrPointer';
+import AboutUs from './page/AboutUs';
 
 function App() {
   useEffect(() => {
@@ -17,14 +20,18 @@ function App() {
     });
   }, []);
   return (
-    <div>
+    <div className='w-full overflow-hidden'>
       <Navbar />
-      <HeroSection />
+      {/* <HeroSection />
       <Services />
       <PopularDestinationsIndia />
       <PopularDestinationsInternational />
       <Gallery />
-      <FeaturedTours />
+      <FeaturedTours /> */}
+
+      {/* <Contact /> */}
+      <AboutUs />
+      <CurosrPointer />
       <Footer />
     </div>
   )

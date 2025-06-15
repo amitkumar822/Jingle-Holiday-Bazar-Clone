@@ -372,7 +372,7 @@ export default Services;
 //   };
 
 //   return (
-//     <div className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-screen">
+//     <div className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden h-[50rem] bg-green-400">
 //       {/* Three.js Background Container */}
 //       <div 
 //         ref={mountRef} 

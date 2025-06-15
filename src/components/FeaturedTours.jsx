@@ -9,30 +9,29 @@ function FeaturedTours() {
       <WaveAnimatedSvg />
 
       {/* Header Section */}
-      {/* Header Section */}
-<div className="flex flex-col justify-center items-center text-center px-6 pt-24">
-  <motion.h1
-    initial={{ opacity: 0, y: -20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-400 drop-shadow-md mb-4 z-10"
-  >
-    FEATURED TOURS IN INDIA
-  </motion.h1>
-  <motion.p
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: 0.2 }}
-    className="text-lg md:text-xl text-gray-800 max-w-3xl z-10 font-light tracking-wide leading-relaxed"
-  >
-    India is a vibrant land of startling contrasts where both the traditional and modern worlds meet. 
-    The world's seventh largest tourist nation by area and the second largest in terms of population.
-  </motion.p>
-</div>
-
+      <div className="flex flex-col justify-center items-center text-center px-6 pt-24">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-400 drop-shadow-md mb-4 z-10"
+        >
+          FEATURED TOURS IN INDIA
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-lg md:text-xl text-gray-800 max-w-3xl z-10 font-light tracking-wide leading-relaxed"
+        >
+          India is a vibrant land of startling contrasts where both the
+          traditional and modern worlds meet. The world's seventh largest
+          tourist nation by area and the second largest in terms of population.
+        </motion.p>
+      </div>
 
       {/* Tour Cards */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 mt-16 px-6">
+      <div className="max-w-8xl mx-auto grid md:grid-cols-2 gap-12 mt-16 px-6">
         {/* Large Left Card */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -44,6 +43,8 @@ function FeaturedTours() {
             className="h-[22rem] w-full object-cover"
             src={data[0].url}
             alt={data[0].title}
+            data-aos="zoom-in"
+            data-aos-duration="2000"
           />
           <div className="p-8">
             <h2 className="text-2xl font-bold text-blue-700 mb-3">
@@ -69,7 +70,9 @@ function FeaturedTours() {
               <img
                 src={item.url}
                 alt={item.title}
-                className="w-full md:w-[45%] h-64 object-cover"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                className="w-full md:w-[45%] h-[17.5rem] object-cover"
               />
               <div className="p-6 flex flex-col justify-between">
                 <div>
