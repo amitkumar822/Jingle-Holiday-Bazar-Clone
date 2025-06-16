@@ -12,6 +12,8 @@ import Footer from './page/home/Footer';
 import Contact from './page/ContactUs';
 import CurosrPointer from './utils/CurosrPointer';
 import { Outlet } from 'react-router-dom';
+import ScrollToTopButton from './utils/ScrollToTopButton';
+import ScrollToTop from './utils/ScrollToTopOnMount';
 
 function App() {
   useEffect(() => {
@@ -27,6 +29,10 @@ function App() {
       </main>
       <CurosrPointer />
       <Footer />
+
+       
+      <ScrollToTopButton />
+      <ScrollToTop />
     </div>
   )
 }

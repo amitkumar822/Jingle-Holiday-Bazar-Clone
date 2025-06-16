@@ -1,20 +1,19 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
-    { name: "Domestic", href: "#domestic" },
-    { name: "International", href: "#international" },
-    { name: "Place Packages", href: "#packages" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "Domestic", href: "/domestic-travel" },
+    { name: "International", href: "/international-travel" },
+    { name: "Place Packages", href: "/places-packages" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
   return (
@@ -43,9 +42,13 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
+              <Link to='/pay-now'>
               <Button className="ml-4 bg-blue-600 hover:bg-blue-700">
                 PAY NOW
               </Button>
+              </Link>
+
+              
               <a
                 href="tel:+918506922777"
                 className="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md font-extrabold flex items-center"
