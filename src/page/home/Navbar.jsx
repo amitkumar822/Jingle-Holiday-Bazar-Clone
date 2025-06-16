@@ -24,7 +24,7 @@ const Navbar = () => {
             {/* logo */}
             <div>
               <img
-                className="w-28 h-28 rounded-full mt-20"
+                className={`${isMenuOpen ? 'hidden' : ''} w-28 h-28 rounded-full mt-20`}
                 src="https://jingleholidaybazar.com/images/mainlogo.gif"
                 alt=""
               />
