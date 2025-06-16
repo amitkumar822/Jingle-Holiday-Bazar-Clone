@@ -27,7 +27,7 @@ function App() {
       <main>
         <Outlet />
       </main>
-      <CurosrPointer />
+      {/* <CurosrPointer /> */}
       <Footer />
 
        
