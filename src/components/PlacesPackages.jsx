@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FiMapPin, FiStar } from "react-icons/fi";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import HeroTest from "./3D_Animation/HeroTest";
+import HeroSectionPlacesPackages from "./3D_Animation/HeroSectionPlacesPackages";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -43,86 +43,9 @@ const PlacesPackages = () => {
 
   return (
     <div className="relative bg-gradient-to-b from-[#000428] to-[#004e92] text-white min-h-screen">
-      <HeroTest />
+      <HeroSectionPlacesPackages />
 
       {/* Destinations Section */}
-      {/* <section className="py-20 relative">
-        <div className="container mx-auto px-6">
-          <motion.h2
-            ref={(el) => (sectionRefs.current[0] = el)}
-            className="text-3xl md:text-4xl font-bold text-center mb-16 relative inline-block"
-          >
-            <span className="relative z-10">Featured Packages</span>
-            <svg
-              className="absolute -bottom-2 left-0 w-full h-2 z-0"
-              viewBox="0 0 200 20"
-            >
-              <path
-                d="M0 10 Q 50 20, 100 10 T 200 10"
-                fill="none"
-                stroke="url(#underline-gradient)"
-                strokeWidth="3"
-                strokeLinecap="round"
-              />
-              <defs>
-                <linearGradient
-                  id="underline-gradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="0%"
-                >
-                  <stop offset="0%" stopColor="#4f46e5" />
-                  <stop offset="100%" stopColor="#a855f7" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </motion.h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {destinations.map((place, index) => (
-              <motion.div
-                key={place.id}
-                ref={(el) => (sectionRefs.current[index + 1] = el)}
-                whileHover={{ y: -10 }}
-                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
-              >
-                <div className="relative h-64 overflow-hidden">
-                  <motion.img
-                    src={place.image}
-                    alt={place.name}
-                    className="w-full h-full object-cover"
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.5 }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 flex items-center text-white">
-                    <FiMapPin className="mr-1" />
-                    <span>{place.location}</span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{place.name}</h3>
-                  <p className="text-gray-600 mb-4">{place.description}</p>
-                  <div className="flex justify-between items-center">
-                    <div className="flex items-center text-yellow-400">
-                      <FiStar className="mr-1" />
-                      <span className="text-gray-800 font-medium">
-                        {place.rating}
-                      </span>
-                    </div>
-                    <div className="text-lg font-bold text-indigo-600">
-                      ₹{place.price.toLocaleString()}
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       <section className="relative w-full py-24 overflow-hidden bg-gradient-to-b from-[#000428] to-[#004e92] text-white">
         <div className="container mx-auto px-6">
           {/* Section Title */}
