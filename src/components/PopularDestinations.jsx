@@ -73,7 +73,7 @@ const PopularDestinations = ({destinations, title, content}) => {
           </motion.div>
 
           {/* Right Two Smaller Images */}
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between gap-3">
             {[destinations[1], destinations[2]].map((item, index) => (
               <motion.div
                 key={index}
