@@ -396,7 +396,7 @@ const Services = () => {
   };
 
   return (
-    <div className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden h-[50rem]">
+    <div className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden md:h-[50rem]">
       {/* Three.js Background Container */}
 
       <div
