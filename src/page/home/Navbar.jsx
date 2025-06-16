@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -9,49 +8,48 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about-us" },
+    { name: "About", href: "/about-us" },
     { name: "Domestic", href: "/domestic-travel" },
     { name: "International", href: "/international-travel" },
-    { name: "Place Packages", href: "/places-packages" },
-    { name: "Contact Us", href: "/contact-us" },
+    { name: "PlacePackages", href: "/places-packages" },
+    { name: "Contact", href: "/contact-us" },
   ];
 
   return (
     <div className="relative z-30">
       {/* Navbar */}
       <nav className="bg-gradient-to-b from-[#7c96b1] via-[#9aaec3] to-[#dde4ec] shadow-md fixed w-full z-10">
-        <div className="container mx-auto px-4">
+        <div className="xl:container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* logo */}
             <div>
               <img
-              className="w-28 h-28 rounded-full mt-20"
+                className="w-28 h-28 rounded-full mt-20"
                 src="https://jingleholidaybazar.com/images/mainlogo.gif"
                 alt=""
               />
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden md:flex items-center lg:space-x-4 space-x-2 xl:font-extrabold font-semibold">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="text-gray-100 font-extrabold hover:text-blue-600 px-3 py-2 rounded-md"
+                  className="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md"
                 >
                   {item.name}
                 </Link>
               ))}
-              <Link to='/pay-now'>
-              <Button className="ml-4 bg-blue-600 hover:bg-blue-700">
-                PAY NOW
-              </Button>
+              <Link to="/pay-now" className="lg:flex hidden">
+                <Button className="ml-4 bg-blue-600 hover:bg-blue-700">
+                  PAY NOW
+                </Button>
               </Link>
 
-              
               <a
                 href="tel:+918506922777"
-                className="text-gray-100 hover:text-blue-600 px-3 py-2 rounded-md font-extrabold flex items-center"
+                className="text-gray-100 xl:flex hidden hover:text-blue-600 px-3 py-2 rounded-md items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

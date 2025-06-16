@@ -46,7 +46,7 @@ const PlacesPackages = () => {
       <HeroSectionPlacesPackages />
 
       {/* Destinations Section */}
-      <section className="relative w-full py-24 overflow-hidden bg-gradient-to-b from-[#000428] to-[#004e92] text-white">
+      <section className="relative w-full py-24 overflow-hidden bg-gradient-to-b from-[#003671] to-[#004e92] text-white">
         <div className="container mx-auto px-6">
           {/* Section Title */}
           <motion.h2
